@@ -288,4 +288,4 @@ Also, remember that phone number and postal code formats can change, so it's goo
 
 ## License
 
-This project is released under the MIT License.
+This repository is unlicense[d], so feel free to fork.
