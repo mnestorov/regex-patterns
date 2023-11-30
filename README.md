@@ -10,6 +10,7 @@ Below are the patterns for each country, along with a brief description.
   - [Postal Codes](#postal-codes)
 - [Usage](#usage)
   - [PHP](#php)
+  - [Python](#python)
   - [JavaScript](#javascript)
 
 ## Regex Patterns
@@ -273,9 +274,11 @@ if (pattern.test(phoneNumber)) {
 }
 ```
 
-## Important
+## :warning: Important :warning: 
 
-The regex patterns provided here are examples and may not cover all cases or nuances of phone number and postal code formats. You would need to research and verify the patterns for each country. Also, remember that phone number and postal code formats can change, so it's good practice to periodically review and update these patterns.
+The regex patterns provided here are examples and may not cover all cases or nuances of phone number and postal code formats. You would need to research and verify the patterns for each country. 
+
+Also, remember that phone number and postal code formats can change, so it's good practice to periodically review and update these patterns.
 
 ---
 
