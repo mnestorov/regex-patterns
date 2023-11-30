@@ -12,6 +12,8 @@ Below are the patterns for each country, along with a brief description.
 - [Regex Patterns](#regex-patterns)
   - 🇦🇩 [Andorra](#andorra)
   - 🇦🇹 [Austria](#austria)
+  - 🇧🇪 [Belgium](#belgium)
+  - 🇧🇦 [Bosnia and Herzegovina](#bosnia-and-herzegovina)
   - 🇧🇬 [Bulgaria](#bulgaria)
   - 🇭🇷 [Croatia](#croatia)
   - 🇨🇾 [Cyprus](#cyprus)
@@ -30,6 +32,7 @@ Below are the patterns for each country, along with a brief description.
   - 🇱🇹 [Lithuania](#lithuania)
   - 🇱🇺 [Luxembourg](#luxembourg)
   - 🇲🇹 [Malta](#malta)
+  - 🇲🇪 [Montenegro](#montenegro)
   - 🇲🇨 [Monaco](#monaco)
   - 🇳🇱 [Netherlands](#netherlands)
   - 🇲🇰 [North Macedonia](#north-macedonia)
@@ -48,6 +51,9 @@ Below are the patterns for each country, along with a brief description.
 - [Usage](#usage)
   - [PHP](#php)
   - [Python](#python)
+  - [C#](#c)
+  - [Java](#java)
+  - [Ruby](#ruby)
   - [JavaScript](#javascript)
 
 ## Regex Patterns
@@ -71,6 +77,26 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\\d{4}$`
 - **Description:** Austrian postal codes are made up of 4 digits.
+
+---
+
+#### Belgium
+##### Phone Number
+- **Pattern:** `^\\+32[1-9][0-9]{7,8}$`
+- **Description:** Belgian phone numbers typically start with +32, followed by a non-zero digit and then 7 to 8 additional digits. This pattern caters to both mobile and landline numbers.
+##### Postal Code
+- **Pattern:** `^\\d{4}$`
+- **Description:** Belgian postal codes consist of 4 digits. This pattern matches a sequence of exactly four numerical digits.
+- 
+---
+
+#### Bosnia and Herzegovina
+##### Phone Number
+- **Pattern:** `^\\+387[6][0-9]{7}$`
+- **Description:** Bosnian phone numbers typically start with +387, followed by a 6 (indicating a mobile number) and then 7 more digits. This pattern is tailored towards mobile numbers, as they are the most commonly used.
+##### Postal Code
+- **Pattern:** `^\\d{5}$`
+- **Description:** Bosnian postal codes consist of 5 digits. This pattern matches a sequence of exactly five numerical digits.
 
 ---
 
@@ -251,6 +277,16 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^[A-Z]{3}\\s?\\d{2,4}$`
 - **Description:** Maltese postal codes consist of three letters followed by a space (optional) and 2 to 4 digits.
+
+---
+
+#### Montenegro
+##### Phone Number
+- **Pattern:** `^\\+382[6-9][0-9]{6,7}$`
+- **Description:** Montenegrin phone numbers typically start with +382, followed by a digit between 6 and 9, and then 6 to 7 more digits. This pattern covers both mobile and landline numbers.
+##### Postal Code
+- **Pattern:** `^\\d{5}$`
+- **Description:** Montenegrin postal codes consist of 5 digits. This pattern matches a sequence of exactly five numerical digits.
 
 ---
 
@@ -440,6 +476,79 @@ if re.match(pattern, phone_number):
     print("Valid German phone number.")
 else:
     print("Invalid German phone number.")
+```
+
+### C#
+
+In C#, we can use the `System.Text.RegularExpressions` namespace to work with regex.
+
+Here's an example of how to validate a German phone number:
+
+```c
+using System;
+using System.Text.RegularExpressions;
+
+class Program
+{
+    static void Main()
+    {
+        string pattern = @"^\+49[1-9][0-9]{1,14}$";
+        string phoneNumber = "+491234567890";
+
+        if (Regex.IsMatch(phoneNumber, pattern))
+        {
+            Console.WriteLine("Valid German phone number.");
+        }
+        else
+        {
+            Console.WriteLine("Invalid German phone number.");
+        }
+    }
+}
+```
+
+### Java
+
+In Java, regex functionalities are provided by the `java.util.regex` package.
+
+Here's an example of how to validate a German phone number:
+
+```java
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Main {
+    public static void main(String[] args) {
+        String pattern = "^\\+49[1-9][0-9]{1,14}$";
+        String phoneNumber = "+491234567890";
+
+        Pattern r = Pattern.compile(pattern);
+        Matcher m = r.matcher(phoneNumber);
+
+        if (m.find()) {
+            System.out.println("Valid German phone number.");
+        } else {
+            System.out.println("Invalid German phone number.");
+        }
+    }
+}
+```
+
+### Ruby
+
+Ruby has **built-in** support for regular expressions.
+
+Here's an example of how to validate a German phone number:
+
+```ruby
+pattern = /^\+49[1-9][0-9]{1,14}$/
+phone_number = "+491234567890"
+
+if phone_number.match(pattern)
+  puts "Valid German phone number."
+else
+  puts "Invalid German phone number."
+end
 ```
 
 ### JavaScript
