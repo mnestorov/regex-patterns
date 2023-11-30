@@ -1,5 +1,9 @@
 # European Phone Numbers and Postal Codes Regex Patterns
 
+![Licence](https://img.shields.io/badge/Unlicense-red)
+
+## Overview
+
 This repository contains regular expression (regex) patterns for validating phone numbers and postal codes for European countries. 
 
 Below are the patterns for each country, along with a brief description.
