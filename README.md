@@ -10,7 +10,7 @@ Below are the patterns for each country, along with a brief description.
 
 ## Contents
 - [Regex Patterns](#regex-patterns)
-  - 🇦🇩 [Andora](#andora)
+  - 🇦🇩 [Andorra](#andorra)
   - 🇦🇹 [Austria](#austria)
   - 🇧🇬 [Bulgaria](#bulgaria)
   - 🇭🇷 [Croatia](#croatia)
@@ -62,6 +62,8 @@ Below are the patterns for each country, along with a brief description.
 - **Pattern:** `^AD\\d{3}$`
 - **Description:** Andorran postal codes start with "AD" followed by 3 digits.
 
+---
+
 #### Austria
 ##### Phone Number
 - **Pattern:** `^\\+43[1-9][0-9]{3,12}$`
@@ -69,6 +71,8 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\\d{4}$`
 - **Description:** Austrian postal codes are made up of 4 digits.
+
+---
 
 #### Bulgaria
 ##### Phone Number
@@ -78,6 +82,8 @@ Below are the patterns for each country, along with a brief description.
 - **Pattern:** `^\\d{4}$`
 - **Description:** Bulgarian postal codes consist of 4 digits.
 
+---
+
 #### Croatia
 ##### Phone Number
 - **Pattern:** `^\\+385[1-9][0-9]{7,8}$`
@@ -85,6 +91,8 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\\d{5}$`
 - **Description:** Croatian postal codes are made up of 5 digits.
+
+---
 
 #### Cyprus
 ##### Phone Number
@@ -94,6 +102,8 @@ Below are the patterns for each country, along with a brief description.
 - **Pattern:** `^\\d{4}$`
 - **Description:** Cypriot postal codes consist of 4 digits. This pattern matches a sequence of exactly four numerical digits.
 
+---
+
 #### Czech Republic
 ##### Phone Number
 - **Pattern:** `^\\+420[1-9][0-9]{8}$`
@@ -101,6 +111,8 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\\d{3}\\s?\\d{2}$`
 - **Description:** Matches Czech postal codes, consisting of three digits, an optional space, and two more digits.
+
+---
 
 #### Denmark
 ##### Phone Number
@@ -110,6 +122,8 @@ Below are the patterns for each country, along with a brief description.
 - **Pattern:** `^\\d{4}$`
 - **Description:** Danish postal codes consist of 4 digits. This pattern matches a sequence of exactly four numerical digits.
 
+---
+
 #### Estonia
 ##### Phone Number
 - **Pattern:** `^\\+372[5-9][0-9]{6,7}$`
@@ -117,6 +131,8 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\\d{5}$`
 - **Description:** Estonian postal codes consist of 5 digits.
+
+---
 
 #### Finland
 ##### Phone Number
@@ -126,6 +142,8 @@ Below are the patterns for each country, along with a brief description.
 - **Pattern:** `^\\d{5}$`
 - **Description:** Finnish postal codes consist of 5 digits.
 
+---
+
 #### France
 ##### Phone Number
 - **Pattern:** `^\\+33[1-9][0-9]{8}$`
@@ -133,6 +151,8 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\\d{5}$`
 - **Description:** French postal codes are also 5 digits in length. This pattern matches a sequence of five numerical digits.
+
+---
 
 #### Germany
 ##### Phone Number
@@ -142,6 +162,8 @@ Below are the patterns for each country, along with a brief description.
 - **Pattern:** `^\\d{5}$`
 - **Description:** German postal codes consist of 5 digits. This pattern matches a sequence of exactly five numerical digits.
 
+---
+
 #### Greece
 ##### Phone Number
 - **Pattern:** `^\\+30[2-9][0-9]{9}$`
@@ -149,6 +171,8 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\\d{3}\\s?\\d{2}$`
 - **Description:** Matches Greek postal codes, consisting of three digits, an optional space, and two more digits.
+
+---
 
 #### Hungary
 ##### Phone Number
@@ -158,6 +182,8 @@ Below are the patterns for each country, along with a brief description.
 - **Pattern:** `^\\d{4}$`
 - **Description:** Hungarian postal codes consist of 4 digits.
 
+---
+
 #### Ireland
 ##### Phone Number
 - **Pattern:** `^\\+353[1-9][0-9]{6,9}$`
@@ -165,6 +191,8 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^(D6W|[A-Z]{1}[0-9]{1,2}|[A-Z]{2}[0-9]{1,2}|[A-Z]{1}[0-9]{1}[A-Z]{1}|[A-Z]{2}[0-9]{1}[A-Z]{1})$`
 - **Description:** Irish postal codes (Eircode) are alphanumeric and follow several formats, including Dublin postal districts (e.g., D6W).
+
+---
 
 #### Italy
 ##### Phone Number
@@ -174,6 +202,8 @@ Below are the patterns for each country, along with a brief description.
 - **Pattern:** `^\\d{5}$`
 - **Description:** Matches Italian postal codes, which consist of 5 digits.
 
+---
+
 #### Latvia
 ##### Phone Number
 - **Pattern:** `^\\+371[2-9][0-9]{7}$`
@@ -181,6 +211,8 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^LV-\\d{4}$`
 - **Description:** Latvian postal codes start with "LV-" followed by 4 digits.
+
+---
 
 #### Liechtenstein
 ##### Phone Number
@@ -190,13 +222,17 @@ Below are the patterns for each country, along with a brief description.
 - **Pattern:** `^\\d{4}$`
 - **Description:** Liechtenstein postal codes are made up of 4 digits.
 
-#### Lithuania (Litva)
+---
+
+#### Lithuania
 ##### Phone Number
 - **Pattern:** `^\\+370[6-9][0-9]{7}$`
 - **Description:** Lithuanian phone numbers start with +370, followed by a digit between 6 and 9, and then 7 more digits.
 ##### Postal Code
 - **Pattern:** `^LT-\\d{5}$`
 - **Description:** Lithuanian postal codes start with "LT-" followed by 5 digits.
+
+---
 
 #### Luxembourg
 ##### Phone Number
@@ -206,6 +242,8 @@ Below are the patterns for each country, along with a brief description.
 - **Pattern:** `^\\d{4}$`
 - **Description:** Luxembourg postal codes consist of 4 digits.
 
+---
+
 #### Malta
 ##### Phone Number
 - **Pattern:** `^\\+356[0-9]{8}$`
@@ -213,6 +251,8 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^[A-Z]{3}\\s?\\d{2,4}$`
 - **Description:** Maltese postal codes consist of three letters followed by a space (optional) and 2 to 4 digits.
+
+---
 
 #### Monaco
 ##### Phone Number
@@ -222,6 +262,8 @@ Below are the patterns for each country, along with a brief description.
 - **Pattern:** `^980\\d{2}$`
 - **Description:** Monaco postal codes start with 980 followed by two additional digits.
 
+---
+
 #### Netherlands
 ##### Phone Number
 - **Pattern:** `^\\+31[0-9]{9}$`
@@ -229,6 +271,8 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^[1-9][0-9]{3}\\s?[A-Z]{2}$`
 - **Description:** Matches Dutch postal codes, which consist of four digits followed by two letters.
+
+---
 
 #### North Macedonia
 ##### Phone Number
@@ -238,6 +282,8 @@ Below are the patterns for each country, along with a brief description.
 - **Pattern:** `^\\d{4}$`
 - **Description:** North Macedonian postal codes consist of 4 digits. This pattern matches a sequence of exactly four numerical digits.
 
+---
+
 #### Norway
 ##### Phone Number
 - **Pattern:** `^\\+47[2-9][0-9]{7,8}$`
@@ -245,6 +291,8 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\\d{4}$`
 - **Description:** Norwegian postal codes consist of 4 digits.
+
+---
 
 #### Poland
 ##### Phone Number
@@ -254,6 +302,8 @@ Below are the patterns for each country, along with a brief description.
 - **Pattern:** `^\\d{2}-\\d{3}$`
 - **Description:** Matches Polish postal codes, which consist of two digits, a hyphen, and three more digits.
 
+---
+
 #### Portugal
 ##### Phone Number
 - **Pattern:** `^\\+351[1-9][0-9]{8}$`
@@ -261,6 +311,8 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\\d{4}-\\d{3}$`
 - **Description:** Matches Portuguese postal codes, which consist of four digits, a hyphen, and three more digits.
+
+---
 
 #### Romania
 ##### Phone Number
@@ -270,6 +322,8 @@ Below are the patterns for each country, along with a brief description.
 - **Pattern:** `^\\d{6}$`
 - **Description:** Romanian postal codes are made up of 6 digits.
 
+---
+
 #### San Marino
 ##### Phone Number
 - **Pattern:** `^\\+378[0-9]{6,10}$`
@@ -277,6 +331,8 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^4789\\d$`
 - **Description:** San Marino postal codes are "4789" followed by one digit.
+
+---
 
 #### Serbia
 ##### Phone Number
@@ -286,6 +342,8 @@ Below are the patterns for each country, along with a brief description.
 - **Pattern:** `^\\d{5}$`
 - **Description:** Serbian postal codes consist of 5 digits. This pattern matches a sequence of exactly five numerical digits.
 
+---
+
 #### Slovakia
 ##### Phone Number
 - **Pattern:** `^\\+421[1-9][0-9]{8}$`
@@ -293,6 +351,8 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\\d{3}\\s?\\d{2}$`
 - **Description:** Slovak postal codes have 5 digits, typically written with a space after the first three digits.
+
+---
 
 #### Slovenia
 ##### Phone Number
@@ -302,6 +362,8 @@ Below are the patterns for each country, along with a brief description.
 - **Pattern:** `^\\d{4}$`
 - **Description:** Slovenian postal codes consist of 4 digits.
 
+---
+
 #### Spain
 ##### Phone Number
 - **Pattern:** `^\\+34[6-9][0-9]{8}$`
@@ -309,6 +371,8 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\\d{5}$`
 - **Description:** Matches Spanish postal codes, which consist of 5 digits.
+
+---
 
 #### Sweden
 ##### Phone Number
@@ -318,6 +382,8 @@ Below are the patterns for each country, along with a brief description.
 - **Pattern:** `^\\d{3}\\s?\\d{2}$`
 - **Description:** Matches Swedish postal codes, consisting of three digits, an optional space, and two more digits.
 
+---
+
 #### Switzerland
 ##### Phone Number
 - **Pattern:** `^\\+41[1-9][0-9]{8}$`
@@ -325,6 +391,8 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\\d{4}$`
 - **Description:** Swiss postal codes consist of 4 digits.
+
+---
 
 #### United Kingdom
 ##### Phone Number
