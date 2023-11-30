@@ -39,7 +39,7 @@ Below are the patterns for each country, along with a brief description.
 #### 🇫🇷 France
 - **Pattern:** `^\\+33[1-9][0-9]{8}$`
 - **Description:** Matches French phone numbers. Begins with +33 and is followed by 9 digits.
-- 
+
 #### 🇩🇪 Germany
 - **Pattern:** `^\\+49[1-9][0-9]{1,14}$`
 - **Description:** Matches German phone numbers. Begins with +49 and is followed by 9 to 15 digits.
