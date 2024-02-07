@@ -48,6 +48,10 @@ Below are the patterns for each country, along with a brief description.
   - 🇸🇪 [Sweden](#sweden)
   - 🇨🇭 [Switzerland](#switzerland)
   - 🇬🇧 [United Kingdom](#united-kingdom)
+- [Common Patterns](#common-patterns)
+  - [Dates](#dates)
+  - [Currency](#currency)
+  - [Vehicle Registration Codes](#vehicle-registration-codes)
 - [Usage](#usage)
   - [PHP](#php)
   - [Python](#python)
@@ -547,6 +551,32 @@ Below are the patterns for each country, along with a brief description.
 ##### VAT Number
 - **Pattern:** `^GB\d{9}$|^GB\d{12}$|^GBGD\d{3}$|^GBHA\d{3}$`
 - **Description:** UK VAT numbers start with "GB", followed by either 9 digits, 12 digits, or specific codes like "GD" or "HA" for government departments and health authorities, respectively. Despite Brexit, the UK continues to use a VAT system similar to that of the EU.
+
+## Common Patterns
+
+### Dates
+
+European date formats typically use the day-month-year format, which differs from the month-day-year format used in the United States. 
+
+A regex pattern to match this format can look like this: `^(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[012])/\d{4}$`
+
+This pattern checks for a valid day (01 to 31), month (01 to 12), and a 4-digit year. The 0? allows for dates to be written with or without a leading zero (e.g., "1/1/2024" or "01/01/2024").
+
+---
+
+### Currency
+
+To match amounts in euros, which might include commas for thousands separators and a period for the decimal point, you can use the following pattern: `^€\s?\d{1,3}(,\d{3})*(\.\d{2})?$`
+
+This pattern supports amounts like "€1,000.00", "€100", and "€ 2,500.50". It ensures there is a euro symbol at the beginning, optional whitespace, followed by a number that may include commas and exactly two decimal places.
+
+---
+
+### Vehicle Registration Codes
+
+Vehicle registration codes in Europe can vary, but a simple pattern to match a generic format might be: `^[A-Z]{1,3}-\d{1,4}-[A-Z]{1,3}$`
+
+This pattern allows for 1 to 3 letters, followed by 1 to 4 digits, and then 1 to 3 letters again, all separated by dashes. This format matches some European vehicle registration codes but might need adjustments for specific countries.
 
 ## Usage
 
