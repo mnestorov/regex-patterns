@@ -1,12 +1,12 @@
-# European Phone Numbers, Postal Codes and VAT Numbers Regex Patterns
+# Regex Patterns for European Phone Numbers, Postal Codes, VAT Numbers, Dates, Currency etc.
 
 ![Licence](https://img.shields.io/badge/Unlicense-red)
 
 ## Overview
 
-This repository contains regular expression (regex) patterns for validating phone numbers, postal codes and VAT numbers for European countries. 
+This repository contains regular expression (regex) patterns for validating phone numbers, postal codes, VAT numbers and some common and critical in various applications patterns like date, currency etc. for European countries. 
 
-Below are the patterns for each country, along with a brief description.
+Below are the patterns for each European country, along with a brief description.
 
 ## Contents
 - [Regex Patterns](#regex-patterns)
@@ -708,9 +708,13 @@ if (pattern.test(phoneNumber)) {
 
 ## :warning: Important :warning: 
 
-The regex patterns provided here are examples and may not cover all cases or nuances of phone number and postal code formats. You would need to research and verify the patterns for each country. 
+The regex patterns provided here are examples and may not cover all cases or nuances of phone number, postal code, VAT number and vehicle registration code formats. You would need to research and verify the patterns for each country. 
 
-Also, remember that phone number and postal code formats can change, so it's good practice to periodically review and update these patterns.
+Also, remember that phone number, postal code, VAT number and vehicle registration code formats can change, so it's good practice to periodically review and update these patterns.
+
+## Thank You
+
+Every contribution helps. If you have any questions, feel free to reach out.
 
 ---
 
