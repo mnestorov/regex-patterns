@@ -1,10 +1,10 @@
-# European Phone Numbers and Postal Codes Regex Patterns
+# European Phone Numbers, Postal Codes and VAT Numbers Regex Patterns
 
 ![Licence](https://img.shields.io/badge/Unlicense-red)
 
 ## Overview
 
-This repository contains regular expression (regex) patterns for validating phone numbers and postal codes for European countries. 
+This repository contains regular expression (regex) patterns for validating phone numbers, postal codes and VAT numbers for European countries. 
 
 Below are the patterns for each country, along with a brief description.
 
@@ -67,6 +67,8 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^AD\d{3}$`
 - **Description:** Andorran postal codes start with "AD" followed by 3 digits.
+##### VAT Number
+- Not applicable as Andorra does not have a standard VAT number system like EU countries.
 
 ---
 
@@ -77,6 +79,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{4}$`
 - **Description:** Austrian postal codes are made up of 4 digits.
+##### VAT Number
+- **Pattern:** `^ATU\d{8}$`
+- **Description:** Austrian VAT numbers start with "ATU", followed by 8 digits.
 
 ---
 
@@ -87,7 +92,10 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{4}$`
 - **Description:** Belgian postal codes consist of 4 digits. This pattern matches a sequence of exactly four numerical digits.
-- 
+##### VAT Number
+- **Pattern:** `^BE0\d{9}$`
+- **Description:** Belgian VAT numbers start with "BE0", followed by 9 digits.
+
 ---
 
 #### Bosnia and Herzegovina
@@ -97,6 +105,8 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{5}$`
 - **Description:** Bosnian postal codes consist of 5 digits. This pattern matches a sequence of exactly five numerical digits.
+##### VAT Number
+- Bosnia and Herzegovina does not have a VAT number system similar to that of the European Union. For business and tax purposes, companies use a national ID number system. It's essential to consult local regulations or authorities for accurate and specific requirements regarding tax identification and reporting in Bosnia and Herzegovina.
 
 ---
 
@@ -107,6 +117,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{4}$`
 - **Description:** Bulgarian postal codes consist of 4 digits.
+##### VAT Number
+- **Pattern:** `BG\d{9,10}$`
+- **Description:** Bulgarian VAT numbers start with "BG", followed by 9 or 10 digits.
 
 ---
 
@@ -117,6 +130,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{5}$`
 - **Description:** Croatian postal codes are made up of 5 digits.
+##### VAT Number
+- **Pattern:** `^HR\d{11}$`
+- **Description:** Croatian VAT numbers start with "HR", followed by 11 digits.
 
 ---
 
@@ -127,6 +143,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{4}$`
 - **Description:** Cypriot postal codes consist of 4 digits. This pattern matches a sequence of exactly four numerical digits.
+##### VAT Number
+- **Pattern:** `^CY\d{8}L$`
+- **Description:** Cypriot VAT numbers start with "CY", followed by 8 digits and a final letter.
 
 ---
 
@@ -137,6 +156,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{3}\s?\d{2}$`
 - **Description:** Matches Czech postal codes, consisting of three digits, an optional space, and two more digits.
+##### VAT Number
+- **Pattern:** `^CZ\d{8,10}$`
+- **Description:** Czech VAT numbers start with "CZ", followed by 8 to 10 digits.
 
 ---
 
@@ -147,6 +169,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{4}$`
 - **Description:** Danish postal codes consist of 4 digits. This pattern matches a sequence of exactly four numerical digits.
+##### VAT Number
+- **Pattern:** `^DK\d{8}$`
+- **Description:** Danish VAT numbers start with "DK", followed by 8 digits.
 
 ---
 
@@ -157,6 +182,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{5}$`
 - **Description:** Estonian postal codes consist of 5 digits.
+##### VAT Number
+- **Pattern:** `^EE\d{9}$`
+- **Description:** Estonian VAT numbers start with "EE", followed by 9 digits.
 
 ---
 
@@ -167,6 +195,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{5}$`
 - **Description:** Finnish postal codes consist of 5 digits.
+##### VAT Number
+- **Pattern:** `^FI\d{8}$`
+- **Description:** Finnish VAT numbers start with "FI", followed by 8 digits.
 
 ---
 
@@ -177,6 +208,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{5}$`
 - **Description:** French postal codes are also 5 digits in length. This pattern matches a sequence of five numerical digits.
+##### VAT Number
+- **Pattern:** `^FR[A-HJ-NP-Z0-9]{2}\d{9}$`
+- **Description:** French VAT numbers start with "FR", followed by two characters (either digits or letters except O and I) and then 9 digits.
 
 ---
 
@@ -187,6 +221,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{5}$`
 - **Description:** German postal codes consist of 5 digits. This pattern matches a sequence of exactly five numerical digits.
+##### VAT Number
+- **Pattern:** `^DE\d{9}$`
+- **Description:** German VAT numbers start with "DE", followed by 9 digits.
 
 ---
 
@@ -197,6 +234,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{3}\s?\d{2}$`
 - **Description:** Matches Greek postal codes, consisting of three digits, an optional space, and two more digits.
+##### VAT Number
+- **Pattern:** `^EL\d{9}$`
+- **Description:** Greek VAT numbers start with "EL", followed by 9 digits.
 
 ---
 
@@ -207,6 +247,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{4}$`
 - **Description:** Hungarian postal codes consist of 4 digits.
+##### VAT Number
+- **Pattern:** `^HU\d{8}$`
+- **Description:** Hungarian VAT numbers start with "HU", followed by 8 digits.
 
 ---
 
@@ -217,6 +260,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^(D6W|[A-Z]{1}[0-9]{1,2}|[A-Z]{2}[0-9]{1,2}|[A-Z]{1}[0-9]{1}[A-Z]{1}|[A-Z]{2}[0-9]{1}[A-Z]{1})$`
 - **Description:** Irish postal codes (Eircode) are alphanumeric and follow several formats, including Dublin postal districts (e.g., D6W).
+##### VAT Number
+- **Pattern:** `^IE\d{7}[A-WY][A-I]?|IE[0-9+][A-Z+][0-9]{5}[A-WY]$`
+- **Description:** Irish VAT numbers start with "IE", followed by 7 digits and one or two letters. Variants include an additional character before the last digit for newer numbers.
 
 ---
 
@@ -227,6 +273,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{5}$`
 - **Description:** Matches Italian postal codes, which consist of 5 digits.
+##### VAT Number
+- **Pattern:** `^IT\d{11}$`
+- **Description:** Italian VAT numbers start with "IT", followed by 11 digits.
 
 ---
 
@@ -237,6 +286,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^LV-\d{4}$`
 - **Description:** Latvian postal codes start with "LV-" followed by 4 digits.
+##### VAT Number
+- **Pattern:** `^LV\d{11}$`
+- **Description:** Latvian VAT numbers start with "LV", followed by 11 digits.
 
 ---
 
@@ -247,6 +299,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{4}$`
 - **Description:** Liechtenstein postal codes are made up of 4 digits.
+##### VAT Number
+- **Pattern:** `^LI\d{5}$`
+- **Description:** Liechtenstein VAT numbers start with "LI", followed by 5 digits. The country uses a simpler system due to its smaller size.
 
 ---
 
@@ -257,6 +312,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^LT-\d{5}$`
 - **Description:** Lithuanian postal codes start with "LT-" followed by 5 digits.
+##### VAT Number
+- **Pattern:** `^LT\d{9,12}$`
+- **Description:** Lithuanian VAT numbers start with "LT", followed by 9 or 12 digits.
 
 ---
 
@@ -267,6 +325,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{4}$`
 - **Description:** Luxembourg postal codes consist of 4 digits.
+##### VAT Number
+- **Pattern:** `^LU\d{8}$`
+- **Description:** Luxembourg VAT numbers start with "LU", followed by 8 digits.
 
 ---
 
@@ -277,6 +338,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^[A-Z]{3}\s?\d{2,4}$`
 - **Description:** Maltese postal codes consist of three letters followed by a space (optional) and 2 to 4 digits.
+##### VAT Number
+- **Pattern:** `^MT\d{8}$`
+- **Description:** Maltese VAT numbers start with "MT", followed by 8 digits.
 
 ---
 
@@ -287,6 +351,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{5}$`
 - **Description:** Montenegrin postal codes consist of 5 digits. This pattern matches a sequence of exactly five numerical digits.
+##### VAT Number
+- **Pattern:** `^ME\d{8}$`
+- **Description:** Montenegrin VAT numbers start with "ME", followed by 8 digits. Montenegro, not being an EU member, has its own VAT system.
 
 ---
 
@@ -297,7 +364,8 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^980\d{2}$`
 - **Description:** Monaco postal codes start with 980 followed by two additional digits.
-
+##### VAT Number
+- Monaco does not have a distinct VAT number system and uses the French VAT system. Businesses in Monaco typically use French VAT numbers, which start with "FR", followed by two characters (either digits or letters except O and I) and then 9 digits.
 ---
 
 #### Netherlands
@@ -307,6 +375,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^[1-9][0-9]{3}\s?[A-Z]{2}$`
 - **Description:** Matches Dutch postal codes, which consist of four digits followed by two letters.
+##### VAT Number
+- **Pattern:** `^NL\d{9}B\d{2}$`
+- **Description:** Dutch VAT numbers start with "NL", followed by 9 digits, "B", and 2 more digits.
 
 ---
 
@@ -317,6 +388,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{4}$`
 - **Description:** North Macedonian postal codes consist of 4 digits. This pattern matches a sequence of exactly four numerical digits.
+##### VAT Number
+- **Pattern:** `^MK\d{13}$`
+- **Description:** North Macedonian VAT numbers start with "MK", followed by 13 digits. This format reflects the country's specific tax identification system.
 
 ---
 
@@ -327,6 +401,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{4}$`
 - **Description:** Norwegian postal codes consist of 4 digits.
+##### VAT Number
+- **Pattern:** `^NO\d{9}MVA$`
+- **Description:** Norwegian VAT numbers start with "NO", followed by 9 digits and end with "MVA" (which stands for "Merverdiavgift", the Norwegian term for VAT).
 
 ---
 
@@ -337,6 +414,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{2}-\d{3}$`
 - **Description:** Matches Polish postal codes, which consist of two digits, a hyphen, and three more digits.
+##### VAT Number
+- **Pattern:** `^PL\d{10}$`
+- **Description:** Polish VAT numbers start with "PL", followed by 10 digits.
 
 ---
 
@@ -347,6 +427,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{4}-\d{3}$`
 - **Description:** Matches Portuguese postal codes, which consist of four digits, a hyphen, and three more digits.
+##### VAT Number
+- **Pattern:** `^PT\d{9}$`
+- **Description:** Portuguese VAT numbers start with "PT", followed by 9 digits.
 
 ---
 
@@ -357,6 +440,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{6}$`
 - **Description:** Romanian postal codes are made up of 6 digits.
+##### VAT Number
+- **Pattern:** `^RO\d{2,10}$`
+- **Description:** Romanian VAT numbers start with "RO", followed by between 2 and 10 digits.
 
 ---
 
@@ -367,6 +453,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^4789\d$`
 - **Description:** San Marino postal codes are "4789" followed by one digit.
+##### VAT Number
+- **Pattern:** `^SM\d{5}$`
+- **Description:** San Marino VAT numbers start with "SM", followed by 5 digits. Despite its size, San Marino has its own VAT system separate from Italy.
 
 ---
 
@@ -377,6 +466,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{5}$`
 - **Description:** Serbian postal codes consist of 5 digits. This pattern matches a sequence of exactly five numerical digits.
+##### VAT Number
+- **Pattern:** `^RS\d{9}$`
+- **Description:** Serbian VAT numbers start with "RS", followed by 9 digits. Serbia, not being an EU member, has its own VAT registration system.
 
 ---
 
@@ -387,6 +479,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{3}\s?\d{2}$`
 - **Description:** Slovak postal codes have 5 digits, typically written with a space after the first three digits.
+##### VAT Number
+- **Pattern:** `^SK\d{10}$`
+- **Description:** Slovak VAT numbers start with "SK", followed by 10 digits.
 
 ---
 
@@ -397,6 +492,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{4}$`
 - **Description:** Slovenian postal codes consist of 4 digits.
+##### VAT Number
+- **Pattern:** `^SI\d{8}$`
+- **Description:** Slovenian VAT numbers start with "SI", followed by 8 digits.
 
 ---
 
@@ -407,6 +505,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{5}$`
 - **Description:** Matches Spanish postal codes, which consist of 5 digits.
+##### VAT Number
+- **Pattern:** `^ES[A-Z]\d{7}[A-Z]$|^ES[A-Z][0-9]{7}[0-9A-Z]$|^ES[0-9]{8}[A-Z]$`
+- **Description:** Spanish VAT numbers start with "ES", followed by various formats including a letter, 7 digits, then a letter; or 8 digits then a letter.
 
 ---
 
@@ -417,6 +518,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{3}\s?\d{2}$`
 - **Description:** Matches Swedish postal codes, consisting of three digits, an optional space, and two more digits.
+##### VAT Number
+- **Pattern:** `^SE\d{12}$`
+- **Description:**  Swedish VAT numbers start with "SE", followed by 12 digits.
 
 ---
 
@@ -427,6 +531,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^\d{4}$`
 - **Description:** Swiss postal codes consist of 4 digits.
+##### VAT Number
+- **Pattern:** `^CHE\d{9}MWST|TVA|IVA$`
+- **Description:** Swiss VAT numbers start with "CHE", followed by 9 digits and end with "MWST", "TVA", or "IVA", depending on the language region (German, French, or Italian for VAT).
 
 ---
 
@@ -437,6 +544,9 @@ Below are the patterns for each country, along with a brief description.
 ##### Postal Code
 - **Pattern:** `^(GIR ?0AA|[A-Z]{1,2}[0-9]{1,2} ?[0-9][A-Z]{2})$`
 - **Description:** Matches UK postal codes.
+##### VAT Number
+- **Pattern:** `^GB\d{9}$|^GB\d{12}$|^GBGD\d{3}$|^GBHA\d{3}$`
+- **Description:** UK VAT numbers start with "GB", followed by either 9 digits, 12 digits, or specific codes like "GD" or "HA" for government departments and health authorities, respectively. Despite Brexit, the UK continues to use a VAT system similar to that of the EU.
 
 ## Usage
 
