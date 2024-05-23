@@ -52,6 +52,7 @@ Below are the patterns for each European country, along with a brief description
   - [Dates](#dates)
   - [Currency](#currency)
   - [Vehicle Registration Codes](#vehicle-registration-codes)
+  - [Credit and Debit Card Patterns](#credit-and-debit-card-patterns)
 - [Usage](#usage)
   - [PHP](#php)
   - [Python](#python)
@@ -578,6 +579,46 @@ Vehicle registration codes in Europe can vary, but a simple pattern to match a g
 
 This pattern allows for 1 to 3 letters, followed by 1 to 4 digits, and then 1 to 3 letters again, all separated by dashes. This format matches some European vehicle registration codes but might need adjustments for specific countries.
 
+---
+
+### Credit and Debit Card Patterns
+
+Below are regex patterns for various types of credit and debit cards. These patterns match the general format of card numbers issued by major card providers. 
+
+**Keep in mind that these patterns only validate the format, not the actual validity of the card numbers.**
+
+#### Visa
+- **Pattern:** `^4[0-9]{12}(?:[0-9]{3})?$`
+- **Description:** Visa cards start with a 4 and have either 13 or 16 digits.
+
+#### MasterCard
+- **Pattern:** `^5[1-5][0-9]{14}$`
+- **Description:** MasterCard numbers start with digits 51 through 55 and have 16 digits.
+
+#### American Express
+- **Pattern:** `^3[47][0-9]{13}$`
+- **Description:** American Express card numbers start with 34 or 37 and have 15 digits.
+
+#### Discover
+- **Pattern:** `^6(?:011|5[0-9]{2})[0-9]{12}$`
+- **Description:** Discover cards start with 6011 or 65 and have 16 digits.
+
+#### Diners Club
+- **Pattern:** `^3(?:0[0-5]|[68][0-9])[0-9]{11}$`
+- **Description:** Diners Club cards start with 300-305, 36, or 38 and have 14 digits.
+
+#### JCB
+- **Pattern:** `^(?:2131|1800|35\d{3})\d{11}$`
+- **Description:** JCB cards start with 2131, 1800, or 35 and have 15 or 16 digits.
+
+#### Maestro
+- **Pattern:** `^(?:5[0678]\d{2}|6\d{3})\d{8,15}$`
+- **Description:** Maestro cards have 12 to 19 digits and start with 50, 56-69.
+
+#### UnionPay
+- **Pattern:** `^62[0-9]{14,17}$`
+- **Description:** UnionPay cards start with 62 and have 16 to 19 digits.
+
 ## Usage
 
 ### PHP
@@ -596,6 +637,30 @@ if (preg_match($pattern, $phoneNumber)) {
     echo "Invalid German phone number.";
 }
 ```
+Here's an example of how to validate a credit card number:
+
+```php
+$patterns = [
+    'visa' => '/^4[0-9]{12}(?:[0-9]{3})?$/',
+    'mastercard' => '/^5[1-5][0-9]{14}$/',
+    'amex' => '/^3[47][0-9]{13}$/',
+    'discover' => '/^6(?:011|5[0-9]{2})[0-9]{12}$/',
+    'diners' => '/^3(?:0[0-5]|[68][0-9])[0-9]{11}$/',
+    'jcb' => '/^(?:2131|1800|35\d{3})\d{11}$/',
+    'maestro' => '/^(?:5[0678]\d{2}|6\d{3})\d{8,15}$/',
+    'unionpay' => '/^62[0-9]{14,17}$/'
+];
+
+$cardNumber = '4111111111111111'; // example Visa card number
+
+foreach ($patterns as $type => $pattern) {
+    if (preg_match($pattern, $cardNumber)) {
+        echo "Valid $type card number.";
+        break;
+    }
+}
+```
+
 ### Python
 
 To use regex patterns in Python, we can use the `re` module, which provides support for regular expressions. 
@@ -616,6 +681,30 @@ if re.match(pattern, phone_number):
     print("Valid German phone number.")
 else:
     print("Invalid German phone number.")
+```
+
+Here's an example of how to validate a credit card number:
+
+```python
+import re
+
+patterns = {
+    'visa': r'^4[0-9]{12}(?:[0-9]{3})?$',
+    'mastercard': r'^5[1-5][0-9]{14}$',
+    'amex': r'^3[47][0-9]{13}$',
+    'discover': r'^6(?:011|5[0-9]{2})[0-9]{12}$',
+    'diners': r'^3(?:0[0-5]|[68][0-9])[0-9]{11}$',
+    'jcb': r'^(?:2131|1800|35\d{3})\d{11}$',
+    'maestro': r'^(?:5[0678]\d{2}|6\d{3})\d{8,15}$',
+    'unionpay': r'^62[0-9]{14,17}$'
+}
+
+card_number = '4111111111111111'  # example Visa card number
+
+for card_type, pattern in patterns.items():
+    if re.match(pattern, card_number):
+        print(f"Valid {card_type} card number.")
+        break
 ```
 
 ### C#
@@ -642,6 +731,41 @@ class Program
         else
         {
             Console.WriteLine("Invalid German phone number.");
+        }
+    }
+}
+```
+Here's an example of how to validate a credit card number:
+
+```c
+using System;
+using System.Text.RegularExpressions;
+
+class Program
+{
+    static void Main()
+    {
+        var patterns = new (string CardType, string Pattern)[]
+        {
+            ("Visa", @"^4[0-9]{12}(?:[0-9]{3})?$"),
+            ("MasterCard", @"^5[1-5][0-9]{14}$"),
+            ("Amex", @"^3[47][0-9]{13}$"),
+            ("Discover", @"^6(?:011|5[0-9]{2})[0-9]{12}$"),
+            ("Diners", @"^3(?:0[0-5]|[68][0-9])[0-9]{11}$"),
+            ("JCB", @"^(?:2131|1800|35\d{3})\d{11}$"),
+            ("Maestro", @"^(?:5[0678]\d{2}|6\d{3})\d{8,15}$"),
+            ("UnionPay", @"^62[0-9]{14,17}$")
+        };
+
+        string cardNumber = "4111111111111111";  // example Visa card number
+
+        foreach (var (CardType, Pattern) in patterns)
+        {
+            if (Regex.IsMatch(cardNumber, Pattern))
+            {
+                Console.WriteLine($"Valid {CardType} card number.");
+                break;
+            }
         }
     }
 }
@@ -674,6 +798,39 @@ public class Main {
 }
 ```
 
+Here's an example of how to validate a credit card number:
+
+```java
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Main {
+    public static void main(String[] args) {
+        String[][] patterns = {
+            {"Visa", "^4[0-9]{12}(?:[0-9]{3})?$"},
+            {"MasterCard", "^5[1-5][0-9]{14}$"},
+            {"Amex", "^3[47][0-9]{13}$"},
+            {"Discover", "^6(?:011|5[0-9]{2})[0-9]{12}$"},
+            {"Diners", "^3(?:0[0-5]|[68][0-9])[0-9]{11}$"},
+            {"JCB", "^(?:2131|1800|35\\d{3})\\d{11}$"},
+            {"Maestro", "^(?:5[0678]\\d{2}|6\\d{3})\\d{8,15}$"},
+            {"UnionPay", "^62[0-9]{14,17}$"}
+        };
+
+        String cardNumber = "4111111111111111";  // example Visa card number
+
+        for (String[] pattern : patterns) {
+            Pattern r = Pattern.compile(pattern[1]);
+            Matcher m = r.matcher(cardNumber);
+            if (m.find()) {
+                System.out.println("Valid " + pattern[0] + " card number.");
+                break;
+            }
+        }
+    }
+}
+```
+
 ### Ruby
 
 Ruby has **built-in** support for regular expressions.
@@ -691,6 +848,30 @@ else
 end
 ```
 
+Here's an example of how to validate a credit card number:
+
+```ruby
+patterns = {
+  'visa' => /^4[0-9]{12}(?:[0-9]{3})?$/,
+  'mastercard' => /^5[1-5][0-9]{14}$/,
+  'amex' => /^3[47][0-9]{13}$/,
+  'discover' => /^6(?:011|5[0-9]{2})[0-9]{12}$/,
+  'diners' => /^3(?:0[0-5]|[68][0-9])[0-9]{11}$/,
+  'jcb' => /^(?:2131|1800|35\d{3})\d{11}$/,
+  'maestro' => /^(?:5[0678]\d{2}|6\d{3})\d{8,15}$/,
+  'unionpay' => /^62[0-9]{14,17}$/
+}
+
+card_number = "4111111111111111" # example Visa card number
+
+patterns.each do |type, pattern|
+  if card_number.match(pattern)
+    puts "Valid #{type} card number."
+    break
+  end
+end
+```
+
 ### JavaScript
 
 Here's an example of how to validate a German phone number:
@@ -705,12 +886,37 @@ if (pattern.test(phoneNumber)) {
     console.log("Invalid German phone number.");
 }
 ```
+Here's an example of how to validate a credit card number:
+
+```javascript
+const patterns = {
+    visa: /^4[0-9]{12}(?:[0-9]{3})?$/,
+    mastercard: /^5[1-5][0-9]{14}$/,
+    amex: /^3[47][0-9]{13}$/,
+    discover: /^6(?:011|5[0-9]{2})[0-9]{12}$/,
+    diners: /^3(?:0[0-5]|[68][0-9])[0-9]{11}$/,
+    jcb: /^(?:2131|1800|35\d{3})\d{11}$/,
+    maestro: /^(?:5[0678]\d{2}|6\d{3})\d{8,15}$/,
+    unionpay: /^62[0-9]{14,17}$/
+};
+
+const cardNumber = '4111111111111111';  // example Visa card number
+
+for (let type in patterns) {
+    if (patterns[type].test(cardNumber)) {
+        console.log(`Valid ${type} card number.`);
+        break;
+    }
+}
+```
 
 ## :warning: Important :warning: 
 
 The regex patterns provided here are examples and may not cover all cases or nuances of phone number, postal code, VAT number and vehicle registration code formats. You would need to research and verify the patterns for each country. 
 
 Also, remember that phone number, postal code, VAT number and vehicle registration code formats can change, so it's good practice to periodically review and update these patterns.
+
+Be sure to test thoroughly and adjust the patterns as necessary to fit your specific requirements.
 
 ## Thank You
 
