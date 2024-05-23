@@ -1,10 +1,10 @@
-# Regex Patterns for European Phone Numbers, Postal Codes, VAT Numbers, Dates, Currency etc.
+# Regex Patterns for European Phone Numbers, Postal Codes, VAT Numbers, Dates, Currency, Credit and Debit cards etc.
 
 ![Licence](https://img.shields.io/badge/Unlicense-red)
 
 ## Overview
 
-This repository contains regular expression (regex) patterns for validating phone numbers, postal codes, VAT numbers and some common and critical in various applications patterns like date, currency etc. for European countries. 
+This repository contains regular expression (regex) patterns for validating phone numbers, postal codes, VAT numbers and some common and critical in various applications patterns like date, currency, credit and debit cards etc. for European countries (but not only).
 
 Below are the patterns for each European country, along with a brief description.
 
