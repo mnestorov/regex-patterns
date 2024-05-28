@@ -920,9 +920,13 @@ Also, remember that phone number, postal code, VAT number and vehicle registrati
 
 Be sure to test thoroughly and adjust the patterns as necessary to fit your specific requirements.
 
+## Contributing
+
+We welcome contributions from the community! If you would like to contribute, please fork the repository, make changes, and submit a pull request. You can also open an issue to discuss potential changes or add new patterns.
+
 ## Thank You
 
-Every contribution helps. If you have any questions, feel free to reach out.
+If you have any questions, feel free to reach out.
 
 ---
 
