@@ -1,6 +1,8 @@
+![Regex_Patterns](images/regex.png)
+
 # Regex Patterns for European Phone Numbers, Postal Codes, VAT Numbers, Dates, Currency, Credit and Debit cards etc.
 
-![Licence](https://img.shields.io/badge/Unlicense-red)
+[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
 
 ## Overview
 
@@ -926,4 +928,4 @@ Every contribution helps. If you have any questions, feel free to reach out.
 
 ## License
 
-This repository is unlicense[d], so feel free to fork.
+This project is released under the MIT License.
