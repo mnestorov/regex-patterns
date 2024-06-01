@@ -511,7 +511,7 @@ Below are the patterns for each European country, along with a brief description
 - **Description:** Matches Spanish phone numbers. Begins with +34, followed by a digit from 6 to 9, and then 8 more digits.
 ##### Postal Code
 - **Pattern:** `^(?:0[1-9]|[1-4]\d|5[0-2])\d{3}$`
-- **Description:** Spanish postal codes consist of 5 digits. The first two indicate the province, the third one a large town or main delivery rounds, and the last two digits the delivery area and the secondary delivery route or link to rural areas.
+- **Description:** Spanish postal codes consist of 5 digits. The first two indicate the province, the third one a large town, city or main delivery rounds, and the last two digits the delivery area and the secondary delivery route or link to rural areas.
 ##### VAT Number
 - **Pattern:** `^ES[A-Z]\d{7}[A-Z]$|^ES[A-Z][0-9]{7}[0-9A-Z]$|^ES[0-9]{8}[A-Z]$`
 - **Description:** Spanish VAT numbers start with "ES", followed by various formats including a letter, 7 digits, then a letter; or 8 digits then a letter.
