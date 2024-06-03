@@ -62,6 +62,9 @@ Below are the patterns for each European country, along with a brief description
   - [Java](#java)
   - [Ruby](#ruby)
   - [JavaScript](#javascript)
+  - [Go](#go)
+  - [Swift](#swift)
+  - [Perl](#perl)
 
 ## Regex Patterns
 
@@ -909,6 +912,81 @@ for (let type in patterns) {
         console.log(`Valid ${type} card number.`);
         break;
     }
+}
+```
+
+### Go
+
+Go has built-in support for regular expressions through the regexp package. Here's an example of how to validate a German phone number:
+
+```go
+package main
+
+import (
+    "fmt"
+    "regexp"
+)
+
+func main() {
+    // Example: Validate a German phone number
+    pattern := `^\+49[1-9][0-9]{1,14}$`
+    phoneNumber := "+491234567890"
+
+    re := regexp.MustCompile(pattern)
+    match := re.MatchString(phoneNumber)
+
+    if match {
+        fmt.Println("Valid German phone number.")
+    } else {
+        fmt.Println("Invalid German phone number.")
+    }
+}
+```
+
+### Swift
+
+Swift uses the NSRegularExpression class for regex. Here’s an implementation guide:
+
+```swift
+import Foundation
+
+func validatePhoneNumber(phoneNumber: String) {
+    let pattern = "^\\+49[1-9][0-9]{1,14}$"
+    
+    do {
+        let regex = try NSRegularExpression(pattern: pattern, options: [])
+        let nsString = phoneNumber as NSString
+        let results = regex.matches(in: phoneNumber, options: [], range: NSRange(location: 0, length: nsString.length))
+        
+        if results.count > 0 {
+            print("Valid German phone number.")
+        } else {
+            print("Invalid German phone number.")
+        }
+    } catch let error {
+        print("Invalid regex: \(error.localizedDescription)")
+    }
+}
+
+validatePhoneNumber(phoneNumber: "+491234567890")
+```
+
+### Perl
+
+Perl is well-known for its native regex capabilities, making it straightforward to implement regex validations:
+
+```perl
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+my $pattern = '^\\+49[1-9][0-9]{1,14}$';
+my $phone_number = '+491234567890';
+
+if ($phone_number =~ /$pattern/) {
+    print "Valid German phone number.\n";
+} else {
+    print "Invalid German phone number.\n";
 }
 ```
 
