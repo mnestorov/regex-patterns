@@ -8,6 +8,8 @@
 
 This repository contains regular expression (regex) patterns for validating phone numbers, postal codes, VAT numbers and some common and critical in various applications patterns like date, currency, credit and debit cards etc. for European countries (but not only).
 
+:warning: **If you prefer, you can use the [Regex Viewer](https://mnestorov.github.io/regex-patterns/) online tool, but keep in mind that the RV tool is still under development!**
+
 Below are the patterns for each European country, along with a brief description.
 
 ## Contents
