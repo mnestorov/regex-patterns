@@ -105,7 +105,7 @@ Below are the patterns for each European country, along with a brief description
 - **Pattern:** `^\d{4}$`
 - **Description:** Belgian postal codes consist of 4 digits. This pattern matches a sequence of exactly four numerical digits.
 ##### VAT Number
-- **Pattern:** `^BE0\d{9}$`
+- **Pattern:** `^BE[01]\d{9}$`
 - **Description:** Belgian VAT numbers start with "BE0", followed by 9 digits.
 
 ---
