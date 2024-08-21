@@ -33,6 +33,7 @@ Below are the patterns for each European country, along with a brief description
   - 🇭🇺 [Hungary](#hungary)
   - 🇮🇪 [Ireland](#ireland)
   - 🇮🇹 [Italy](#italy)
+  - 🇽🇰 [Kosovo](#kosovo) :warning:
   - 🇱🇻 [Latvia](#latvia)
   - 🇱🇮 [Liechtenstein](#liechtenstein)
   - 🇱🇹 [Lithuania](#lithuania)
@@ -322,6 +323,21 @@ Below are the patterns for each European country, along with a brief description
 ##### VAT Number
 - **Pattern:** `^IT\d{11}$`
 - **Description:** Italian VAT numbers start with "IT", followed by 11 digits.
+
+---
+
+#### Kosovo :warning:
+##### Phone Number
+- **Pattern:** `^\+383[1-9][0-9]{6,7}$`
+- **Description:** Kosovo phone numbers start with +383, followed by a digit between 1 and 9, and then 6 to 7 more digits.
+
+##### Postal Code
+- **Pattern:** `^\d{5}$`
+- **Description:** Kosovo postal codes consist of 5 digits.
+
+##### VAT Number
+- **Pattern:** `^XK\d{8}[A-Z]$`
+- **Description:** Kosovo VAT numbers start with "XK", followed by 8 digits and one capital letter.
 
 ---
 
