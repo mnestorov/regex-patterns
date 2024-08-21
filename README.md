@@ -14,8 +14,10 @@ Below are the patterns for each European country, along with a brief description
 
 ## Contents
 - [Regex Patterns](#regex-patterns)
+  - 🇦🇱 [Albania](#albania)
   - 🇦🇩 [Andorra](#andorra)
   - 🇦🇹 [Austria](#austria)
+  - 🇧🇾 [Belarus](#belarus)
   - 🇧🇪 [Belgium](#belgium)
   - 🇧🇦 [Bosnia and Herzegovina](#bosnia-and-herzegovina)
   - 🇧🇬 [Bulgaria](#bulgaria)
@@ -36,6 +38,7 @@ Below are the patterns for each European country, along with a brief description
   - 🇱🇹 [Lithuania](#lithuania)
   - 🇱🇺 [Luxembourg](#luxembourg)
   - 🇲🇹 [Malta](#malta)
+  - 🇲🇩 [Moldova](#moldova)
   - 🇲🇪 [Montenegro](#montenegro)
   - 🇲🇨 [Monaco](#monaco)
   - 🇳🇱 [Netherlands](#netherlands)
@@ -51,6 +54,7 @@ Below are the patterns for each European country, along with a brief description
   - 🇪🇸 [Spain](#spain)
   - 🇸🇪 [Sweden](#sweden)
   - 🇨🇭 [Switzerland](#switzerland)
+  - 🇺🇦 [Ukraine](#ukraine)
   - 🇬🇧 [United Kingdom](#united-kingdom)
 - [Common Patterns](#common-patterns)
   - [Dates](#dates)
@@ -71,6 +75,21 @@ Below are the patterns for each European country, along with a brief description
 ## Regex Patterns
 
 ### Phone Numbers
+
+#### Albania
+##### Phone Number
+- **Pattern:** `^\+355[2-9]\d{7,8}$`
+- **Description:** Albanian phone numbers start with +355, followed by a digit between 2 and 9, and then 7 to 8 more digits.
+
+##### Postal Code
+- **Pattern:** `^\d{4}$`
+- **Description:** Albanian postal codes are made up of 4 digits.
+
+##### VAT Number
+- **Pattern:** `^ALJ\d{8}[A-Z]$`
+- **Description:** Albanian VAT numbers start with "ALJ", followed by 8 digits and one capital letter.
+
+---
 
 #### Andorra
 ##### Phone Number
@@ -94,6 +113,21 @@ Below are the patterns for each European country, along with a brief description
 ##### VAT Number
 - **Pattern:** `^ATU\d{8}$`
 - **Description:** Austrian VAT numbers start with "ATU", followed by 8 digits.
+
+---
+
+#### Belarus
+##### Phone Number
+- **Pattern:** `^\+375[2-9][0-9]{7}$`
+- **Description:** Belarusian phone numbers start with +375, followed by a digit between 2 and 9, and then 7 more digits.
+
+##### Postal Code
+- **Pattern:** `^\d{6}$`
+- **Description:** Belarusian postal codes consist of 6 digits.
+
+##### VAT Number
+- **Pattern:** `^BY\d{9}$`
+- **Description:** Belarusian VAT numbers start with "BY", followed by 9 digits.
 
 ---
 
@@ -356,6 +390,21 @@ Below are the patterns for each European country, along with a brief description
 
 ---
 
+#### Moldova
+##### Phone Number
+- **Pattern:** `^\+373[0-9]{8}$`
+- **Description:** Moldovan phone numbers begin with +373, followed by 8 digits.
+
+##### Postal Code
+- **Pattern:** `^\d{4}$`
+- **Description:** Moldovan postal codes consist of 4 digits.
+
+##### VAT Number
+- **Pattern:** `^MD\d{8}$`
+- **Description:** Moldovan VAT numbers start with "MD", followed by 8 digits.
+
+---
+
 #### Montenegro
 ##### Phone Number
 - **Pattern:** `^\+382[6-9][0-9]{6,7}$`
@@ -546,6 +595,21 @@ Below are the patterns for each European country, along with a brief description
 ##### VAT Number
 - **Pattern:** `^CHE\d{9}MWST|TVA|IVA$`
 - **Description:** Swiss VAT numbers start with "CHE", followed by 9 digits and end with "MWST", "TVA", or "IVA", depending on the language region (German, French, or Italian for VAT).
+
+---
+
+#### Ukraine
+##### Phone Number
+- **Pattern:** `^\+380[3-9][0-9]{8}$`
+- **Description:** Ukrainian phone numbers start with +380, followed by a digit between 3 and 9, and then 8 more digits.
+
+##### Postal Code
+- **Pattern:** `^\d{5}$`
+- **Description:** Ukrainian postal codes consist of 5 digits.
+
+##### VAT Number
+- **Pattern:** `^UA\d{12}$`
+- **Description:** Ukrainian VAT numbers start with "UA", followed by 12 digits.
 
 ---
 
