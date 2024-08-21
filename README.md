@@ -33,7 +33,7 @@ Below are the patterns for each European country, along with a brief description
   - 🇭🇺 [Hungary](#hungary)
   - 🇮🇪 [Ireland](#ireland)
   - 🇮🇹 [Italy](#italy)
-  - 🇽🇰 [Kosovo](#kosovo) :warning:
+  - 🇽🇰 [Kosovo](#kosovo-warning) :warning:
   - 🇱🇻 [Latvia](#latvia)
   - 🇱🇮 [Liechtenstein](#liechtenstein)
   - 🇱🇹 [Lithuania](#lithuania)
