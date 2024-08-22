@@ -660,6 +660,21 @@ This pattern supports amounts like "€1,000.00", "€100", and "€ 2,500.50". 
 
 ---
 
+### Emails
+
+To validate email addresses using a regex pattern that covers most common formats, you can use the following pattern:
+
+- **Pattern:** `^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$`
+- **Description:** This pattern matches standard email addresses that consist of a local part (username) and a domain part. The local part allows letters, digits, dots, underscores, and special characters like `%`, `+`, and `-`. The domain part includes letters, digits, and hyphens, followed by a top-level domain (e.g., `.com`, `.net`, `.org`) with a minimum of two characters.
+
+**Examples of valid emails:**
+- `example@example.com`
+- `user.name+tag@sub.domain.org`
+
+This pattern is robust and should work for most email validation scenarios but may need adjustments for edge cases or specific requirements.
+
+---
+
 ### Vehicle Registration Codes
 
 Vehicle registration codes in Europe can vary, but a simple pattern to match a generic format might be: `^[A-Z]{1,3}-\d{1,4}-[A-Z]{1,3}$`
