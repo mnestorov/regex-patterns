@@ -60,6 +60,7 @@ Below are the patterns for each European country, along with a brief description
 - [Common Patterns](#common-patterns)
   - [Dates](#dates)
   - [Currency](#currency)
+  - [Emails](#emails)
   - [Vehicle Registration Codes](#vehicle-registration-codes)
   - [Credit and Debit Card Patterns](#credit-and-debit-card-patterns)
 - [Usage](#usage)
