@@ -14,7 +14,7 @@ Below are the patterns for each European country, along with a brief description
 
 ## Contents
 - [Regex Patterns](#regex-patterns)
-  - 🇦🇽 [Aland Islands](#aland-islands)
+  - 🇦🇽 [Åland Islands](#åland-islands)
   - 🇦🇱 [Albania](#albania)
   - 🇦🇩 [Andorra](#andorra)
   - 🇦🇹 [Austria](#austria)
