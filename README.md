@@ -14,6 +14,7 @@ Below are the patterns for each European country, along with a brief description
 
 ## Contents
 - [Regex Patterns](#regex-patterns)
+  - 🇦🇽 [Aland Islands](#aland-islands)
   - 🇦🇱 [Albania](#albania)
   - 🇦🇩 [Andorra](#andorra)
   - 🇦🇹 [Austria](#austria)
@@ -26,6 +27,7 @@ Below are the patterns for each European country, along with a brief description
   - 🇨🇿 [Czech Republic](#czech-republic)
   - 🇩🇰 [Denmark](#denmark)
   - 🇪🇪 [Estonia](#estonia)
+  - 🇫🇴 [Faroe Islands](#faroe-islands)
   - 🇫🇮 [Finland](#finland)
   - 🇫🇷 [France](#france)
   - 🇩🇪 [Germany](#germany)
@@ -76,7 +78,24 @@ Below are the patterns for each European country, along with a brief description
 
 ## Regex Patterns
 
-### Phone Numbers
+### Phone Numbers, Postal Codes and VAT Numbers
+
+---
+
+#### Åland Islands
+##### Phone Number
+- **Pattern:** `^\+35818[0-9]{5}$`
+- **Description:** Åland Islands phone numbers start with +358, followed by the area code "18" and then 5 more digits. This pattern is specific to the phone numbers in this autonomous region of Finland.
+
+##### Postal Code
+- **Pattern:** `^22[0-9]{3}$`
+- **Description:** Postal codes for the Åland Islands start with "22" and are followed by 3 more digits, fitting the format of Finnish postal codes.
+
+##### VAT Number
+- **Pattern:** `^FI\d{8}$`
+- **Description:** The Åland Islands use the Finnish VAT number format, which starts with "FI" followed by 8 digits. Although Åland is autonomous, it follows the Finnish VAT system.
+
+---
 
 #### Albania
 ##### Phone Number
@@ -233,6 +252,21 @@ Below are the patterns for each European country, along with a brief description
 ##### VAT Number
 - **Pattern:** `^EE\d{9}$`
 - **Description:** Estonian VAT numbers start with "EE", followed by 9 digits.
+
+---
+
+#### Faroe Islands
+##### Phone Number
+- **Pattern:** `^\+298[0-9]{6}$`
+- **Description:** Faroe Islands phone numbers start with +298, followed by 6 digits. This pattern covers all standard phone numbers in the Faroe Islands.
+
+##### Postal Code
+- **Pattern:** `^FO-\d{3}$`
+- **Description:** Postal codes in the Faroe Islands consist of "FO-" followed by 3 digits. This format is unique to the Faroe Islands.
+
+##### VAT Number
+- **Pattern:** `^FO\d{6}$`
+- **Description:** Faroe Islands VAT numbers start with "FO" followed by 6 digits. This pattern reflects the standard VAT number format used in the Faroe Islands.
 
 ---
 
