@@ -33,6 +33,7 @@ Below are the patterns for each European country, along with a brief description
   - 🇩🇪 [Germany](#germany)
   - 🇬🇷 [Greece](#greece)
   - 🇭🇺 [Hungary](#hungary)
+  - 🇮🇸 [Iceland](#iceland)
   - 🇮🇪 [Ireland](#ireland)
   - 🇮🇹 [Italy](#italy)
   - 🇽🇰 [Kosovo](#kosovo-warning) :warning:
@@ -332,6 +333,21 @@ Below are the patterns for each European country, along with a brief description
 ##### VAT Number
 - **Pattern:** `^HU\d{8}$`
 - **Description:** Hungarian VAT numbers start with "HU", followed by 8 digits.
+
+---
+
+#### Iceland
+##### Phone Number
+- **Pattern:** `^\+354[0-9]{7}$`
+- **Description:** Icelandic phone numbers start with +354, followed by 7 digits. This pattern covers the standard phone numbers used throughout Iceland.
+
+##### Postal Code
+- **Pattern:** `^\d{3}$`
+- **Description:** Icelandic postal codes consist of 3 digits, which are unique to specific regions and municipalities within the country.
+
+##### VAT Number
+- **Pattern:** `^IS\d{5,6}$`
+- **Description:** Icelandic VAT numbers start with "IS" and can be either 5 or 6 digits long. This reflects the structure used for VAT registration in Iceland.
 
 ---
 
